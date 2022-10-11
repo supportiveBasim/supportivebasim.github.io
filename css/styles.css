@@ -1,0 +1,22 @@
+body {
+  background-color: #e0ece6 !important;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+}
+
+.main {
+  background-color: #4E4D63;
+}
+
+.inputArea {
+  background-color: #D5E2E3;
+  border: none;
+}
+
+.historyArea {
+  background-color: #D5E2E3;
+  border: none;
+}

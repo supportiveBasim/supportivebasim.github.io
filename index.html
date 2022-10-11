@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <h3 class="title m-5">
+    Scientific Calculator in Vanilla JS
+  </h3>
+  <div class="row d-flex m-0">
+    <div class="p-3 col-8 main">
+      <label for="display" class="ml-3 text-white text-uppercase">Input</label>
+      <input type="text" id="display" name="display" class="inputArea form-control"><br><br>
+
+      <label for="display" class="ml-3 text-white text-uppercase">Result</label>
+      <input type="text" id="output" name="output" class="resultArea form-control" readonly><br><br>
+      <div class="row">
+        <button data-number class="btn m-1 btn-dark col">SQR</button>
+        <button data-number class="btn m-1 btn-dark col">(</button>
+        <button data-number class="btn m-1 btn-dark col">)</button>
+        <button data-number class="btn m-1 btn-dark col">SIN</button>
+        <button data-number class="btn m-1 btn-dark col">COS</button>
+        <button data-number class="btn m-1 btn-dark col">TAN</button>
+      </div>
+      <div class="row">
+        <button data-number class="btn m-1 btn-secondary col">7</button>
+        <button data-number class="btn m-1 btn-secondary col">8</button>
+        <button data-number class="btn m-1 btn-secondary col">9</button>
+        <button data-delete class="btn m-1 btn-danger col">DEL</button>
+        <button data-all-clear class="btn m-1 btn-danger col">AC</button>
+      </div>
+      <div class="row">
+        <button data-number class="btn m-1 btn-secondary col">4</button>
+        <button data-number class="btn m-1 btn-secondary col">5</button>
+        <button data-number class="btn m-1 btn-secondary col">6</button>
+        <button data-number class="btn m-1 btn-secondary col">*</button>
+        <button data-number class="btn m-1 btn-secondary col">/</button>
+      </div>
+      <div class="row">
+        <button data-number class="btn m-1 btn-secondary col">1</button>
+        <button data-number class="btn m-1 btn-secondary col">2</button>
+        <button data-number class="btn m-1 btn-secondary col">3</button>
+        <button data-number class="btn m-1 btn-secondary col">+</button>
+        <button data-number class="btn m-1 btn-secondary col">-</button>
+      </div>
+      <div class="row">
+        <button data-number class="btn m-1 btn-secondary col">0</button>
+        <button data-number class="btn m-1 btn-secondary col">.</button>
+        <button data-number class="btn m-1 btn-secondary col">^</button>
+        <button class="btn m-1 btn-secondary col">ANS</button>
+        <button data-equals class="btn m-1 btn-secondary col">=</button>
+      </div>
+    </div>
+    <div class="col-4 p-2 text-uppercase">
+      <h6 class="text-center">History</h6>
+      <div id="history" class="historyArea text-center"></div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
